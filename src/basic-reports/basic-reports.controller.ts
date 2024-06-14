@@ -15,4 +15,13 @@ export class BasicReportsController {
     pdfDoc.pipe(response);
     pdfDoc.end();
   }
+  @Get('employment-letter')
+  async employmentLetter(@Res() response: Response) {
+    const pdfDoc = this.basicReportsService.employmentLetter();
+
+    response.setHeader('Content-type', 'application/pdf');
+    pdfDoc.info.Title = 'Employment-Letter';
+    pdfDoc.pipe(response);
+    pdfDoc.end();
+  }
 }
