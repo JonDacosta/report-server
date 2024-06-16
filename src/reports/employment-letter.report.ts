@@ -9,7 +9,11 @@ const styles: StyleDictionary = {
   },
   body: {
     alignment: 'justify',
-    margin: [0, 0, 0, 50],
+    margin: [0, 0, 0, 70],
+  },
+  signature: {
+    fontSize: 14,
+    bold: true,
   },
 };
 
@@ -36,6 +40,22 @@ Esta constancia se expide a solicitud del interesado para los fines que consider
       },
       {
         text: `Atentamente`,
+        style: 'signature',
+      },
+      {
+        text: `[Nombre del Empleado]`,
+        style: 'signature',
+      },
+      {
+        text: `[Cargo del Empleado]`,
+        style: 'signature',
+      },
+      {
+        text: `[Nombre de la Empresa]`,
+        style: 'signature',
+      },
+      {
+        text: `[Fecha de Emisión]`,
         style: 'signature',
       },
     ],
